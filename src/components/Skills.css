@@ -1,0 +1,91 @@
+.skills-section {
+  /* background-color: #0e0e10; */ /* Removed to keep body black */
+  color: #e5e7eb;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 45px;
+  color: #f1f5f9;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill {
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #cbd5e1; /* default text color */
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 12px;
+  color:white; /* lighter blue for icons */
+  transition: color 0.3s ease;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit; /* inherit text color for hover effect */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.skill:hover {
+  transform: translateY(-8px);
+  background-color: #334155;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  color: #a5b4fc; /* text color on hover */
+}
+
+.skill:hover i,
+.skill:hover p {
+  color: #a5b4fc; /* icon and text color on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 36px;
+  }
+
+  .skill {
+    width: 100px;
+    padding: 16px;
+  }
+
+  .skill i {
+    font-size: 42px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+}
